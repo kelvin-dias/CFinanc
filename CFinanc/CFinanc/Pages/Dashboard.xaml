@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CFinanc.Pages.Dashboard"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+
+            <Grid HeightRequest="100" BackgroundColor="#1C1C1C">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="260"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                
+                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="icons8usuariohomemcomcirculo52.png"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Dezembro" TextColor="White" FontSize="24" HorizontalTextAlignment="Center" Margin="0,0,0,0"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="2" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center">
+                    <Image Source="icons8sino48.png"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3" Grid.Row="0" HorizontalOptions="End" VerticalOptions="Center">
+                    <Image Source="icons8menu250.png"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid HeightRequest="25" BackgroundColor="#1C1C1C">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Label Text="Saldo em Conta" TextColor="#CCCCCC" FontSize="16" VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Margin="0,0,0,0"/>
+                </StackLayout>
+            </Grid>
+            
+            <Grid HeightRequest="50" BackgroundColor="#1C1C1C">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Label Text="R$0,00" TextColor="White" FontSize="32" VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Margin="0,0,0,0"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid HeightRequest="22" BackgroundColor="#1C1C1C">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Image Source="icons8ocultar48.png" VerticalOptions="Start" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid HeightRequest="100" BackgroundColor="#1C1C1C">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="110"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="160"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="End" VerticalOptions="Center" >
+                    <Image Source="icons8cimacirculo50.png"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Receitas" TextColor="#CCCCCC"/>
+                    <Label Text="R$1.800,00" TextColor="Green" FontSize="20"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="2" Grid.Row="0" HorizontalOptions="End" VerticalOptions="Center" >
+                    <Image Source="icons8cimacirculo50.png"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Despesas" TextColor="#CCCCCC"/>
+                    <Label Text="R$1.158,77" TextColor="Red" FontSize="20"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid HeightRequest="120" BackgroundColor="Green">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:nav="clr-namespace:CFinanc.Pages"
+             mc:Ignorable="d"
+             x:Class="CFinanc.Pages.Home"
+             BackgroundColor="#1C1C1C">
+    <!--Pages can be added as references or inline-->
+    <nav:Dashboard Title="Principal" IconImageSource="icons8casa26.png"/>
+    <nav:Transacao Title="Transações" IconImageSource="icons8lista26.png" />
+    <nav:Cartao Title="Cartões" IconImageSource="icons8cartaoemuso50.png"/>
+    <nav:Mais Title="Mais" IconImageSource="icons8mais50.png" />
+</TabbedPage>
